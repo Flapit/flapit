@@ -46,6 +46,7 @@ class StockMarket(object):
         for message in response:
             for day in message.values():
                 yield {
+                    'volume': day.getElement('volume').getValueAsInteger(),
                     'open': day.getElement('open').getValueAsFloat(),
                     'close': day.getElement('close').getValueAsFloat(),
                     'high': day.getElement('high').getValueAsFloat(),
