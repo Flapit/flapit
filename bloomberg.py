@@ -43,7 +43,7 @@ class StockMarket(object):
                                 'close': day.getElement('close').getValueAsFloat(),
                                 'high': day.getElement('high').getValueAsFloat(),
                                 'low': day.getElement('low').getValueAsFloat(),
-                                'time': day.getElement('time').getValueAsDatetime(),
+                                'time': day.getElement('time').getValueAsString(),
                             }
             if event.eventType() == Event.RESPONSE:
                 raise StopIteration()
@@ -75,8 +75,7 @@ def stock_historical():
     stock_ref = app.config['stocks'][stock]
     stock_market = StockMarket()
     historical = stock_market.request(stock_ref)
-    historical = {day.pop('time').isoformat(): day for day in historical}
-    return jsonify(**historical)
+    return jsonify(historical=historical)
 
 
 if __name__ == '__main__':
