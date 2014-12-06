@@ -90,4 +90,4 @@ if __name__ == '__main__':
 
     app.config['stocks'] = stocks
     app.debug = True
-    app.run(host='0.0.0.0')
+    app.run()
