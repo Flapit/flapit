@@ -87,13 +87,9 @@ def stock_historical():
 
 
 if __name__ == '__main__':
-    stocks = {}
     with open('FTSE_100.csv', 'rb') as csvfile:
         stock_data = csv.reader(csvfile)
-        for key, name in stock_data:
-            name = name.replace('"', '').replace('\xa0', '').replace('\xc2', '').strip()
-            key = key.replace('"', '').strip()
-            stocks[name] = key
+        stocks = dict(stock_data)
 
     app.config['stocks'] = stocks
     app.config.from_object('settings')

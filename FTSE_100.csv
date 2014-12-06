@@ -1,101 +1,101 @@
-"""STJ LN Equity""","""ST JAMES'S PLACE"""
-"""ANTO LN Equity""","""ANTOFAGASTA PLC """
-"""SSE LN Equity""","""SSE PLC         """
-"""RIO LN Equity""","""RIO TINTO PLC   """
-"""WEIR LN Equity""","""WEIR GROUP PLC  """
-"""AAL LN Equity""","""ANGLO AMER PLC  """
-"""ITRK LN Equity""","""INTERTEK GROUP  """
-"""GKN LN Equity""","""GKN PLC         """
-"""EZJ LN Equity""","""EASYJET PLC     """
-"""KGF LN Equity""","""KINGFISHER PLC  """
-"""SHP LN Equity""","""SHIRE PLC       """
-"""HL/ LN Equity""","""HARGREAVES LANSD"""
-"""MKS LN Equity""","""MARKS & SPENCER """
-"""NXT LN Equity""","""NEXT PLC        """
-"""PSON LN Equity""","""PEARSON PLC     """
-"""PSN LN Equity""","""PERSIMMON       """
-"""SN/ LN Equity""","""SMITH & NEPHEW  """
-"""REL LN Equity""","""REED ELSEVIER PL"""
-"""LSE LN Equity""","""LONDON STOCK EX """
-"""WTB LN Equity""","""WHITBREAD PLC   """
-"""EXPN LN Equity""","""EXPERIAN PLC    """
-"""WPP LN Equity""","""WPP PLC         """
-"""PFC LN Equity""","""PETROFAC LTD    """
-"""NG/ LN Equity""","""NATIONAL GRID PL"""
-"""RDSA LN Equity""","""ROYAL DUTCH SH-A"""
-"""ULVR LN Equity""","""UNILEVER PLC    """
-"""SPD LN Equity""","""SPORTS DIRECT IN"""
-"""BSY LN Equity""","""BRITISH SKY BROA"""
-"""GSK LN Equity""","""GLAXOSMITHKLINE """
-"""ADM LN Equity""","""ADMIRAL GROUP   """
-"""RRS LN Equity""","""RANDGOLD RES LTD"""
-"""BLND LN Equity""","""BRIT LAND CO PLC"""
-"""IHG LN Equity""","""INTERCONTINENTAL"""
-"""CCL LN Equity""","""CARNIVAL PLC    """
-"""RMG LN Equity""","""ROYAL MAIL      """
-"""BRBY LN Equity""","""BURBERRY GROUP  """
-"""HMSO LN Equity""","""HAMMERSON PLC   """
-"""CPG LN Equity""","""COMPASS GROUP   """
-"""LAND LN Equity""","""LAND SECURITIES """
-"""ITV LN Equity""","""ITV PLC         """
-"""AZN LN Equity""","""ASTRAZENECA PLC """
-"""AHT LN Equity""","""ASHTEAD GROUP   """
-"""JMAT LN Equity""","""JOHNSON MATTHEY """
-"""ABF LN Equity""","""ASSOC BRIT FOODS"""
-"""RB/ LN Equity""","""RECKITT BENCKISE"""
-"""RR/ LN Equity""","""ROLLS-ROYCE HOLD"""
-"""INTU LN Equity""","""INTU PROPERTIES """
-"""TT/ LN Equity""","""TUI TRAVEL PLC  """
-"""BNZL LN Equity""","""BUNZL PLC       """
-"""CPI LN Equity""","""CAPITA PLC      """
-"""CNA LN Equity""","""CENTRICA PLC    """
-"""DGE LN Equity""","""DIAGEO PLC      """
-"""HSBA LN Equity""","""HSBC HLDGS PLC  """
-"""IMI LN Equity""","""IMI PLC         """
-"""DC/ LN Equity""","""DIXONS CARPHONE """
-"""MGGT LN Equity""","""MEGGITT PLC     """
-"""MRW LN Equity""","""WM MORRISON SUP """
-"""UU/ LN Equity""","""UNITED UTILITIES"""
-"""IMT LN Equity""","""IMPERIAL TOBACCO"""
-"""VOD LN Equity""","""VODAFONE GROUP  """
-"""RBS LN Equity""","""ROYAL BK SCOTLAN"""
-"""BARC LN Equity""","""BARCLAYS PLC    """
-"""SBRY LN Equity""","""SAINSBURY PLC   """
-"""BAB LN Equity""","""BABCOCK INTL GRP"""
-"""SDR LN Equity""","""SCHRODERS PLC   """
-"""BATS LN Equity""","""BRIT AMER TOBACC"""
-"""SAB LN Equity""","""SABMILLER PLC   """
-"""BA/ LN Equity""","""BAE SYSTEMS PLC """
-"""RDSB LN Equity""","""ROYAL DUTCH SH-B"""
-"""SMIN LN Equity""","""SMITHS GRP PLC  """
-"""STAN LN Equity""","""STANDARD CHARTER"""
-"""RSA LN Equity""","""RSA INSURANCE G """
-"""TSCO LN Equity""","""TESCO PLC       """
-"""SGE LN Equity""","""SAGE GROUP      """
-"""ADN LN Equity""","""ABERDEEN ASSET  """
-"""CCH LN Equity""","""COCA-COLA HBC AG"""
-"""TPK LN Equity""","""TRAVIS PERKINS  """
-"""CRH LN Equity""","""CRH PLC         """
-"""LLOY LN Equity""","""LLOYDS BANKING  """
-"""GFS LN Equity""","""G4S PLC         """
-"""TLW LN Equity""","""TULLOW OIL      """
-"""MNDI LN Equity""","""MONDI PLC       """
-"""WOS LN Equity""","""WOLSELEY PLC    """
-"""SL/ LN Equity""","""STANDARD LIFE   """
-"""DLG LN Equity""","""DIRECT LINE INSU"""
-"""III LN Equity""","""3I GROUP PLC    """
-"""IAG LN Equity""","""INTL CONS AIRLIN"""
-"""SVT LN Equity""","""SEVERN TRENT    """
-"""BG/ LN Equity""","""BG GROUP PLC    """
-"""BP/ LN Equity""","""BP PLC          """
-"""BT/A LN Equity""","""BT GROUP PLC    """
-"""GLEN LN Equity""","""GLENCORE PLC    """
-"""FRES LN Equity""","""FRESNILLO PLC   """
-"""FLG LN Equity""","""FRIENDS LIFE GRO"""
-"""BLT LN Equity""","""BHP BILLITON PLC"""
-"""AGK LN Equity""","""AGGREKO PLC     """
-"""AV/ LN Equity""","""AVIVA PLC       """
-"""ARM LN Equity""","""ARM HOLDINGS    """
-"""LGEN LN Equity""","""LEGAL & GEN GRP """
-"""PRU LN Equity""","""PRUDENTIAL PLC  """
-"""OML LN Equity""","""OLD MUTUAL PLC  """
+ROYAL MAIL,RMG LN Equity
+ANTOFAGASTA PLC,ANTO LN Equity
+ANGLO AMER PLC,AAL LN Equity
+BABCOCK INTL GRP,BAB LN Equity
+HARGREAVES LANSD,HL/ LN Equity
+G4S PLC,GFS LN Equity
+ITV PLC,ITV LN Equity
+BT GROUP PLC,BT/A LN Equity
+ADMIRAL GROUP,ADM LN Equity
+NEXT PLC,NXT LN Equity
+MARKS & SPENCER,MKS LN Equity
+WOLSELEY PLC,WOS LN Equity
+RIO TINTO PLC,RIO LN Equity
+SMITHS GRP PLC,SMIN LN Equity
+BAE SYSTEMS PLC,BA/ LN Equity
+PEARSON PLC,PSON LN Equity
+LLOYDS BANKING,LLOY LN Equity
+INTU PROPERTIES,INTU LN Equity
+RANDGOLD RES LTD,RRS LN Equity
+HSBC HLDGS PLC,HSBA LN Equity
+DIRECT LINE INSU,DLG LN Equity
+ASSOC BRIT FOODS,ABF LN Equity
+ROLLS-ROYCE HOLD,RR/ LN Equity
+BURBERRY GROUP,BRBY LN Equity
+LAND SECURITIES,LAND LN Equity
+ST JAMES'S PLACE,STJ LN Equity
+BRIT LAND CO PLC,BLND LN Equity
+UNITED UTILITIES,UU/ LN Equity
+RSA INSURANCE G,RSA LN Equity
+IMI PLC,IMI LN Equity
+INTL CONS AIRLIN,IAG LN Equity
+INTERCONTINENTAL,IHG LN Equity
+GLAXOSMITHKLINE,GSK LN Equity
+SMITH & NEPHEW,SN/ LN Equity
+COMPASS GROUP,CPG LN Equity
+TULLOW OIL,TLW LN Equity
+TUI TRAVEL PLC,TT/ LN Equity
+FRIENDS LIFE GRO,FLG LN Equity
+FRESNILLO PLC,FRES LN Equity
+STANDARD LIFE,SL/ LN Equity
+EASYJET PLC,EZJ LN Equity
+LONDON STOCK EX,LSE LN Equity
+SABMILLER PLC,SAB LN Equity
+PERSIMMON,PSN LN Equity
+PRUDENTIAL PLC,PRU LN Equity
+TRAVIS PERKINS,TPK LN Equity
+OLD MUTUAL PLC,OML LN Equity
+REED ELSEVIER PL,REL LN Equity
+TESCO PLC,TSCO LN Equity
+WHITBREAD PLC,WTB LN Equity
+UNILEVER PLC,ULVR LN Equity
+PETROFAC LTD,PFC LN Equity
+SCHRODERS PLC,SDR LN Equity
+KINGFISHER PLC,KGF LN Equity
+ARM HOLDINGS,ARM LN Equity
+WPP PLC,WPP LN Equity
+WEIR GROUP PLC,WEIR LN Equity
+ASHTEAD GROUP,AHT LN Equity
+INTERTEK GROUP,ITRK LN Equity
+SAGE GROUP,SGE LN Equity
+CRH PLC,CRH LN Equity
+BHP BILLITON PLC,BLT LN Equity
+DIXONS CARPHONE,DC/ LN Equity
+ROYAL BK SCOTLAN,RBS LN Equity
+AGGREKO PLC,AGK LN Equity
+EXPERIAN PLC,EXPN LN Equity
+CAPITA PLC,CPI LN Equity
+3I GROUP PLC,III LN Equity
+IMPERIAL TOBACCO,IMT LN Equity
+SHIRE PLC,SHP LN Equity
+BRITISH SKY BROA,BSY LN Equity
+DIAGEO PLC,DGE LN Equity
+BG GROUP PLC,BG/ LN Equity
+SEVERN TRENT,SVT LN Equity
+BUNZL PLC,BNZL LN Equity
+HAMMERSON PLC,HMSO LN Equity
+BRIT AMER TOBACC,BATS LN Equity
+JOHNSON MATTHEY,JMAT LN Equity
+RECKITT BENCKISE,RB/ LN Equity
+SSE PLC,SSE LN Equity
+COCA-COLA HBC AG,CCH LN Equity
+NATIONAL GRID PL,NG/ LN Equity
+LEGAL & GEN GRP,LGEN LN Equity
+VODAFONE GROUP,VOD LN Equity
+BARCLAYS PLC,BARC LN Equity
+GKN PLC,GKN LN Equity
+SPORTS DIRECT IN,SPD LN Equity
+BP PLC,BP/ LN Equity
+ROYAL DUTCH SH-B,RDSB LN Equity
+ROYAL DUTCH SH-A,RDSA LN Equity
+ABERDEEN ASSET,ADN LN Equity
+CARNIVAL PLC,CCL LN Equity
+SAINSBURY PLC,SBRY LN Equity
+MONDI PLC,MNDI LN Equity
+CENTRICA PLC,CNA LN Equity
+ASTRAZENECA PLC,AZN LN Equity
+GLENCORE PLC,GLEN LN Equity
+AVIVA PLC,AV/ LN Equity
+WM MORRISON SUP,MRW LN Equity
+STANDARD CHARTER,STAN LN Equity
+MEGGITT PLC,MGGT LN Equity
