@@ -75,7 +75,7 @@ def stock_historical():
     stock_ref = app.config['stocks'][stock]
     stock_market = StockMarket()
     historical = stock_market.request(stock_ref)
-    historical = {day.pop('time'): day for day in historical}
+    historical = {day.pop('time').isoformat(): day for day in historical}
     return jsonify(**historical)
 
 
