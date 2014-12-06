@@ -2,6 +2,7 @@ from blpapi import SessionOptions, Session, Name, Event
 import csv
 import datetime
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 
 class StockMarket(object):
@@ -70,6 +71,7 @@ class StockMarket(object):
 
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/')
