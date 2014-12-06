@@ -1,0 +1,4 @@
+BLPAPI_HOST = '10.8.8.1'
+BLPAPI_PORT = 8194
+
+DEBUG = False

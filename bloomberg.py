@@ -3,9 +3,6 @@ import csv
 import datetime
 from flask import Flask, jsonify, request
 
-BLPAPI_HOST = '10.8.8.1'
-BLPAPI_PORT = 8194
-
 
 class StockMarket(object):
     BLPAPI_SERVICE = '//blp/refdata'
@@ -16,10 +13,14 @@ class StockMarket(object):
     BLPAPI_INTERVAL_DATA = Name('barTickData')
     BLPAPI_FIELD_DATA = Name('close')
 
+    def __init__(self, host, port):
+        self.host = host
+        self.port = port
+
     def get_session(self):
         options = SessionOptions()
-        options.setServerHost(BLPAPI_HOST)
-        options.setServerPort(BLPAPI_PORT)
+        options.setServerHost(self.host)
+        options.setServerPort(self.port)
         return Session(options)
 
     def get_service(self, session):
@@ -29,24 +30,27 @@ class StockMarket(object):
             raise IOError('Unable to open service')
         return session.getService(self.BLPAPI_SERVICE)
 
-    def extract_data(self, session):
+    def get_messages(self, session):
         while True:
             event = session.nextEvent(1)
             for message in event:
                 if message.hasElement(self.BLPAPI_DATA):
                     data = message.getElement(self.BLPAPI_DATA)
                     if data.hasElement(self.BLPAPI_INTERVAL_DATA):
-                        data = data.getElement(self.BLPAPI_INTERVAL_DATA)
-                        for day in data.values():
-                            yield {
-                                'open': day.getElement('open').getValueAsFloat(),
-                                'close': day.getElement('close').getValueAsFloat(),
-                                'high': day.getElement('high').getValueAsFloat(),
-                                'low': day.getElement('low').getValueAsFloat(),
-                                'time': day.getElement('time').getValueAsString(),
-                            }
+                        yield data.getElement(self.BLPAPI_INTERVAL_DATA)
             if event.eventType() == Event.RESPONSE:
                 raise StopIteration()
+
+    def get_data_points(self, response):
+        for message in response:
+            for day in message.values():
+                yield {
+                    'open': day.getElement('open').getValueAsFloat(),
+                    'close': day.getElement('close').getValueAsFloat(),
+                    'high': day.getElement('high').getValueAsFloat(),
+                    'low': day.getElement('low').getValueAsFloat(),
+                    'time': day.getElement('time').getValueAsString(),
+                }
 
     def request(self, stock_ref):
         session = self.get_session()
@@ -58,7 +62,11 @@ class StockMarket(object):
         request.set('startDateTime', datetime.datetime(2014, 1, 1))
         request.set('endDateTime', datetime.datetime.now())
         session.sendRequest(request)
-        return list(self.extract_data(session))
+        return self.get_messages(session)
+
+    def get_historical(self, stock_ref):
+        response = self.request(stock_ref)
+        return list(self.get_data_points(response))
 
 
 app = Flask(__name__)
@@ -73,8 +81,8 @@ def stock_list():
 def stock_historical():
     stock = request.form['stock']
     stock_ref = app.config['stocks'][stock]
-    stock_market = StockMarket()
-    historical = stock_market.request(stock_ref)
+    stock_market = StockMarket('10.8.8.1', 8194)
+    historical = stock_market.get_historical(stock_ref)
     return jsonify(historical=historical)
 
 
@@ -88,5 +96,6 @@ if __name__ == '__main__':
             stocks[name] = key
 
     app.config['stocks'] = stocks
+    app.config.from_object('settings')
     app.debug = True
     app.run()
